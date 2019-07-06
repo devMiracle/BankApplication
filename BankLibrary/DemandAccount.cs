@@ -11,7 +11,7 @@ namespace BankLibrary
         public DemandAccount(decimal sum, int percentage) : base(sum, percentage) { }
         protected internal override void Open()
         {
-            base.Onopened(new AccountEventArgs("Открыт новый счет до востребования! Id счета: " + this._id, this._sum));
+            base.OnOpened(new AccountEventArgs("Открыт новый счет до востребования! Id счета: " + this._id, this._sum));
         }
     }
 }

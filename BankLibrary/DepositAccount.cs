@@ -8,7 +8,7 @@ namespace BankLibrary
 {
     public class DepositAccount : Account
     {
-        public DepositAccount(desimal sum, int percentage) : base(sum, percentage) { }
+        public DepositAccount(decimal sum, int percentage) : base(sum, percentage) { }
         protected internal override void Open()
         {
             base.OnOpened(new AccountEventArgs("Открыт новый депозитный счет! Id счета: " + this._id, this._sum));
